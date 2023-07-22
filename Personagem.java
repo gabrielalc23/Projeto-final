@@ -1,105 +1,105 @@
 package sp.senai.br.projetofinal;
 
+
 public class Personagem {
-  
-   private String nome;
-   private Double pontoVida;       
-   private Double pontosMana;
-   private Double pontosStamina;
-   private Double forca;
-   private Double energia;
-   private Double agilidade;
-   private Double vitalidade;
-  
-public String getNome() {
+    
+    private String nome;
+    private Double pontosVida;
+    private Double pontosMana;
+    private Double pontosStamina;
+    private Double forca;
+    private Double energia;
+    private Double agilidade;
+    private Double vitalidade;
+
+    public String getNome() {
         return nome;
     }
 
-    public Double getPontoVida() {
-        return pontoVida;
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public void setAtributos(Double vida, Double mana, Double stamina, Double forca, Double energia, Double agilidade, Double vitalidade){
+        this.pontosVida     = vida;
+        this.pontosMana     = mana;
+        this.pontosStamina  = stamina;
+        this.forca          = forca;
+        this.energia        = energia;
+        this.agilidade      = agilidade;
+        this.vitalidade     = vitalidade;        
+    }
+
+    public Double getPontosVida() {
+        return pontosVida;
+    }
+
+    public void setPontosVida(Double pontosVida) {
+        this.pontosVida = pontosVida;
     }
 
     public Double getPontosMana() {
         return pontosMana;
     }
 
-    public Double getPontosStamina() {
-        return pontosStamina;
-    }
-
-    public Double getForca() {
-        return forca;
-    }
-
-    public Double getEnergia() {
-        return energia;
-    }
-
-    public Double getAgilidade() {
-        return agilidade;
-    }
-
-    public Double getVitalidade() {
-        return vitalidade;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void setPontoVida(Double pontoVida) {
-        this.pontoVida = pontoVida;
-    }
-    
-    public void setAtributos(Double pontoVida, Double pontosMana, Double pontosStamina, Double forca, Double energia, Double agilidade, Double vitalidade) {
-    
-        this.pontoVida = pontoVida;
-        this.pontosMana = pontosMana;
-        this.pontosStamina = pontosStamina;
-        this.forca = forca;
-        this.energia = energia;
-        this.agilidade = agilidade;
-        this.vitalidade = vitalidade;
-}
- 
     public void setPontosMana(Double pontosMana) {
         this.pontosMana = pontosMana;
+    }
+
+    public Double getPontosStamina() {
+        return pontosStamina;
     }
 
     public void setPontosStamina(Double pontosStamina) {
         this.pontosStamina = pontosStamina;
     }
 
-    public void setForca(Double forca) {
+    public Double getForça() {
+        return forca;
+    }
+
+    public void setForça(Double força) {
         this.forca = forca;
+    }
+
+    public Double getEnergia() {
+        return energia;
     }
 
     public void setEnergia(Double energia) {
         this.energia = energia;
     }
 
+    public Double getAgilidade() {
+        return agilidade;
+    }
+
     public void setAgilidade(Double agilidade) {
         this.agilidade = agilidade;
+    }
+
+    public Double getVitalidade() {
+        return vitalidade;
     }
 
     public void setVitalidade(Double vitalidade) {
         this.vitalidade = vitalidade;
     }
-
-   public void consumirMana(double mana ) {
-       this.pontosMana -= mana;
+    
+    public void consumirMana(Double mana){
+        this.pontosMana -= mana;
     }
-
-   public void consumirStamina (Double pontosStamina) {
-    this.pontosStamina -= pontosStamina;
+    
+    public void consumirStamina(Double stamina){
+        this.pontosStamina -= stamina;
     }
-
-   public void DanoFisico (Double dano){
-   this.pontoVida -= dano;
-   }
+    
+    public void sofrerDanoFisico(Double dano){
+        this.pontosVida -= dano;
+    }
+    
+    public void sofrerDanoMagico(Double dano){
+        this.pontosVida -= dano;
    
-   public void DanoMagico(Double dano){
-   this.pontoVida -= dano;
-   }
-   
+    }
 }

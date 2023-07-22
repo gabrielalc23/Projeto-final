@@ -1,59 +1,59 @@
-
 package sp.senai.br.projetofinal;
 
 public class Ataque {
     
-    public String nome;
-    public Double danoMagico;
-    public Double danoFisico;
-    public Double requisitoMana;
-    public Double requisitoStamina;
+    private String nome;
+    private Double danoMagico;
+    private Double danoFisico;
+    private Double requisitoMana;
+    private Double requisitoStamina;
     
-    public void setAtributos(Double requisitoMana, Double requisitoStamina, Double mana, Double danoMagico, Double danoFisico ){
+    public void setAtributos(Double requisitoMana, Double requisitoStamina,Double danoMagico, Double danoFisico){
+        this.requisitoMana    = requisitoMana;
+        this.requisitoStamina = requisitoStamina;
+        this.danoMagico       = danoMagico;
+        this.danoFisico       = danoFisico;
+    }
     
-    this.danoMagico       =  danoMagico; 
-    this.danoFisico       =  danoFisico;
-    this.requisitoMana    =  requisitoMana;
-    this.requisitoStamina = requisitoStamina;
-    
+    public String getNome() {
+        return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-    public void setDanoMagico(Double danoMagico) {
-        this.danoMagico = danoMagico;
-    }
-
-    public void setDanoFisico(Double danoFisico) {
-        this.danoFisico = danoFisico;
-    }
-
-    public void setRequisitoMana(Double requisitoMana) {
-        this.requisitoMana = requisitoMana;
-    }
-
-    public void setRequisitoStamina(Double requisitoStamina) {
-        this.requisitoStamina = requisitoStamina;
-    }
-
-    public String getNome() {
-        return nome;
     }
 
     public Double getDanoMagico() {
         return danoMagico;
     }
 
+    public void setDanoMagico(Double danoMagico) {
+        this.danoMagico = danoMagico;
+    }
+
     public Double getDanoFisico() {
         return danoFisico;
+    }
+
+    public void setDanoFisico(Double danoFisico) {
+        this.danoFisico = danoFisico;
     }
 
     public Double getRequisitoMana() {
         return requisitoMana;
     }
 
+    public void setRequisitoMana(Double requisitoMana) {
+        this.requisitoMana = requisitoMana;
+    }
+
     public Double getRequisitoStamina() {
         return requisitoStamina;
     }
+
+    public void setRequisitoStamina(Double requisitoStamina) {
+        this.requisitoStamina = requisitoStamina;
+   
+        
+    } 
 }
